@@ -1,10 +1,10 @@
-package com.e_commerce.demo;
+package com.e_commerce.back_SemiSenior;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DemoApplicationTests {
+class BackSemiSeniorApplicationTests {
 
 	@Test
 	void contextLoads() {
