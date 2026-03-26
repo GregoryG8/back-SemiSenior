@@ -51,8 +51,9 @@ Ejecutar una clase de test especifica:
 
 Esta API incluye documentacion interactiva con SpringDoc.
 
-- Swagger UI: `http://localhost:8080/swagger-ui.html`
-- OpenAPI JSON: `http://localhost:8080/v3/api-docs`
+- **Swagger UI**: `http://localhost:8080/swagger-ui/index.html#/`
+- **OpenAPI JSON**: `http://localhost:8080/v3/api-docs`
+- **OpenAPI YAML**: `http://localhost:8080/v3/api-docs.yaml`
 
 ### Autenticacion en Swagger
 
@@ -62,3 +63,16 @@ Si la seguridad esta habilitada, utiliza las credenciales por defecto:
 - Password: `demo`
 
 En Swagger UI, presiona **Authorize** y selecciona autenticacion HTTP Basic.
+
+### Endpoints Principales
+
+- **GET /clientes** - Listar clientes (con paginación)
+- **GET /clientes/{id}** - Obtener cliente por ID
+- **POST /clientes** - Crear nuevo cliente
+- **PUT /clientes/{id}** - Actualizar cliente
+- **DELETE /clientes/{id}** - Eliminar cliente
+
+- **GET /pedidos** - Listar pedidos
+- **POST /pedidos** - Crear nuevo pedido
+- **PUT /pedidos/{id}/estado** - Cambiar estado del pedido
+
