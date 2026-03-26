@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: ${SUPABASE_URL}
+    username: ${SUPABASE_USERNAME}
+    password: ${SUPABASE_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
