@@ -29,6 +29,21 @@ SPRING_PROFILES_ACTIVE=supabase
 mvn spring-boot:run
 ```
 
+## Como ejecutar tests
+
+Ejecutar todos los tests:
+
+```bash
+./mvnw test
+```
+
+Ejecutar una clase de test especifica:
+
+```bash
+./mvnw -Dtest=PedidoControllerIntegrationTest test
+./mvnw -Dtest=PedidoServiceImplTest test
+```
+
 ## Puerto por Defecto
 **`http://localhost:8080`** (puerto 8080)
 

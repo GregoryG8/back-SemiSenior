@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.e_commerce.back_SemiSenior.BackSemiSeniorApplicationTests" time="0.335" tests="1" errors="0" skipped="0" failures="0" flakes="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.e_commerce.back_SemiSenior.controllers.PedidoControllerIntegrationTest" time="2.252" tests="2" errors="0" skipped="0" failures="0" flakes="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -47,7 +47,7 @@
     <property name="localRepository" value="/Users/gregorygonzalez/.m2/repository"/>
     <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
     <property name="java.io.tmpdir" value="/var/folders/8f/7nj321cn1gndyk50mc3yxfzm0000gp/T/"/>
-    <property name="com.zaxxer.hikari.pool_number" value="2"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
     <property name="java.version" value="17.0.18"/>
     <property name="user.dir" value="/Users/gregorygonzalez/IdeaProjects/back-SemiSenior"/>
     <property name="os.arch" value="aarch64"/>
@@ -65,12 +65,12 @@
     <property name="java.class.version" value="61.0"/>
     <property name="LOGGED_APPLICATION_NAME" value="[back-SemiSenior] "/>
   </properties>
-  <testcase name="contextLoads" classname="com.e_commerce.back_SemiSenior.BackSemiSeniorApplicationTests" time="0.001">
-    <system-out><![CDATA[2026-03-26T07:17:01.136-05:00  INFO 8877 --- [back-SemiSenior] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.e_commerce.back_SemiSenior.BackSemiSeniorApplicationTests]: BackSemiSeniorApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2026-03-26T07:17:01.140-05:00  INFO 8877 --- [back-SemiSenior] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.e_commerce.back_SemiSenior.BackSemiSeniorApplication for test class com.e_commerce.back_SemiSenior.BackSemiSeniorApplicationTests
-2026-03-26T07:17:01.140-05:00  INFO 8877 --- [back-SemiSenior] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.e_commerce.back_SemiSenior.BackSemiSeniorApplicationTests]: BackSemiSeniorApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2026-03-26T07:17:01.141-05:00  INFO 8877 --- [back-SemiSenior] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.e_commerce.back_SemiSenior.BackSemiSeniorApplication for test class com.e_commerce.back_SemiSenior.BackSemiSeniorApplicationTests
-2026-03-26T07:17:01.143-05:00  INFO 8877 --- [back-SemiSenior] [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+  <testcase name="crearPedido_debePersistirYCalcularTotal" classname="com.e_commerce.back_SemiSenior.controllers.PedidoControllerIntegrationTest" time="0.175">
+    <system-out><![CDATA[07:16:58.940 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.e_commerce.back_SemiSenior.controllers.PedidoControllerIntegrationTest]: PedidoControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+07:16:59.003 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.e_commerce.back_SemiSenior.BackSemiSeniorApplication for test class com.e_commerce.back_SemiSenior.controllers.PedidoControllerIntegrationTest
+07:16:59.033 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.e_commerce.back_SemiSenior.controllers.PedidoControllerIntegrationTest]: PedidoControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+07:16:59.034 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.e_commerce.back_SemiSenior.BackSemiSeniorApplication for test class com.e_commerce.back_SemiSenior.controllers.PedidoControllerIntegrationTest
+07:16:59.057 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -81,35 +81,45 @@
 
  :: Spring Boot ::                (v4.0.4)
 
-2026-03-26T07:17:01.155-05:00  INFO 8877 --- [back-SemiSenior] [           main] c.e.b.BackSemiSeniorApplicationTests     : Starting BackSemiSeniorApplicationTests using Java 17.0.18 with PID 8877 (started by gregorygonzalez in /Users/gregorygonzalez/IdeaProjects/back-SemiSenior)
-2026-03-26T07:17:01.155-05:00  INFO 8877 --- [back-SemiSenior] [           main] c.e.b.BackSemiSeniorApplicationTests     : No active profile set, falling back to 1 default profile: "default"
-2026-03-26T07:17:01.240-05:00  INFO 8877 --- [back-SemiSenior] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-03-26T07:17:01.247-05:00  INFO 8877 --- [back-SemiSenior] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 3 JPA repository interfaces.
-2026-03-26T07:17:01.277-05:00  INFO 8877 --- [back-SemiSenior] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2026-03-26T07:17:01.278-05:00  INFO 8877 --- [back-SemiSenior] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:c8979ee0-9c20-4ae0-bce6-cd7766b0968b user=SA
-2026-03-26T07:17:01.279-05:00  INFO 8877 --- [back-SemiSenior] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2026-03-26T07:17:01.280-05:00  INFO 8877 --- [back-SemiSenior] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-03-26T07:17:01.288-05:00  INFO 8877 --- [back-SemiSenior] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-03-26T07:17:01.289-05:00  INFO 8877 --- [back-SemiSenior] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:h2:mem:c8979ee0-9c20-4ae0-bce6-cd7766b0968b]
+2026-03-26T07:16:59.145-05:00  INFO 8877 --- [back-SemiSenior] [           main] c.e.b.c.PedidoControllerIntegrationTest  : Starting PedidoControllerIntegrationTest using Java 17.0.18 with PID 8877 (started by gregorygonzalez in /Users/gregorygonzalez/IdeaProjects/back-SemiSenior)
+2026-03-26T07:16:59.145-05:00  INFO 8877 --- [back-SemiSenior] [           main] c.e.b.c.PedidoControllerIntegrationTest  : The following 1 profile is active: "test"
+2026-03-26T07:16:59.417-05:00  INFO 8877 --- [back-SemiSenior] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-26T07:16:59.438-05:00  INFO 8877 --- [back-SemiSenior] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 3 JPA repository interfaces.
+2026-03-26T07:16:59.575-05:00  INFO 8877 --- [back-SemiSenior] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-26T07:16:59.596-05:00  INFO 8877 --- [back-SemiSenior] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-03-26T07:16:59.680-05:00  INFO 8877 --- [back-SemiSenior] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-26T07:16:59.690-05:00  INFO 8877 --- [back-SemiSenior] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-26T07:16:59.750-05:00  INFO 8877 --- [back-SemiSenior] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-03-26T07:16:59.750-05:00  INFO 8877 --- [back-SemiSenior] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-26T07:16:59.769-05:00  INFO 8877 --- [back-SemiSenior] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
 	Database driver: H2 JDBC Driver
 	Database dialect: H2Dialect
 	Database version: 2.4.240
-	Default catalog/schema: C8979EE0-9C20-4AE0-BCE6-CD7766B0968B/PUBLIC
+	Default catalog/schema: TESTDB/PUBLIC
 	Autocommit mode: undefined/unknown
 	Isolation level: READ_COMMITTED [default READ_COMMITTED]
 	JDBC fetch size: 100
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-03-26T07:17:01.307-05:00  INFO 8877 --- [back-SemiSenior] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-03-26T07:17:01.310-05:00  INFO 8877 --- [back-SemiSenior] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-03-26T07:17:01.340-05:00  WARN 8877 --- [back-SemiSenior] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-03-26T07:17:01.354-05:00  WARN 8877 --- [back-SemiSenior] [           main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
-2026-03-26T07:17:01.413-05:00  INFO 8877 --- [back-SemiSenior] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
-2026-03-26T07:17:01.467-05:00  INFO 8877 --- [back-SemiSenior] [           main] c.e.b.BackSemiSeniorApplicationTests     : Started BackSemiSeniorApplicationTests in 0.324 seconds (process running for 3.495)
-2026-03-26T07:17:01.468-05:00  WARN 8877 --- [back-SemiSenior] [           main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
-2026-03-26T07:17:01.468-05:00  WARN 8877 --- [back-SemiSenior] [           main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-26T07:17:00.044-05:00  INFO 8877 --- [back-SemiSenior] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-26T07:17:00.062-05:00  INFO 8877 --- [back-SemiSenior] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-26T07:17:00.092-05:00  INFO 8877 --- [back-SemiSenior] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-26T07:17:00.540-05:00  WARN 8877 --- [back-SemiSenior] [           main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2026-03-26T07:17:00.622-05:00  INFO 8877 --- [back-SemiSenior] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-03-26T07:17:00.927-05:00  INFO 8877 --- [back-SemiSenior] [           main] c.e.b.c.PedidoControllerIntegrationTest  : Started PedidoControllerIntegrationTest in 1.872 seconds (process running for 2.954)
+2026-03-26T07:17:00.929-05:00  WARN 8877 --- [back-SemiSenior] [           main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-26T07:17:00.929-05:00  WARN 8877 --- [back-SemiSenior] [           main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-26T07:17:00.939-05:00  INFO 8877 --- [back-SemiSenior] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-03-26T07:17:00.939-05:00  INFO 8877 --- [back-SemiSenior] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-03-26T07:17:00.940-05:00  INFO 8877 --- [back-SemiSenior] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+]]></system-out>
+  </testcase>
+  <testcase name="cambiarEstado_debeActualizarPedido" classname="com.e_commerce.back_SemiSenior.controllers.PedidoControllerIntegrationTest" time="0.025">
+    <system-out><![CDATA[2026-03-26T07:17:01.110-05:00  INFO 8877 --- [back-SemiSenior] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-03-26T07:17:01.110-05:00  INFO 8877 --- [back-SemiSenior] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-03-26T07:17:01.110-05:00  INFO 8877 --- [back-SemiSenior] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
 ]]></system-out>
   </testcase>
 </testsuite>

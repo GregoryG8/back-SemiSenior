@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.e_commerce.back_SemiSenior.BackSemiSeniorApplicationTests" time="0.335" tests="1" errors="0" skipped="0" failures="0" flakes="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.e_commerce.back_SemiSenior.service.PedidoServiceImplTest" time="0.54" tests="3" errors="0" skipped="0" failures="0" flakes="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -8,10 +8,8 @@
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
     <property name="user.timezone" value="America/Bogota"/>
-    <property name="org.jboss.logging.provider" value="slf4j"/>
     <property name="os.name" value="Mac OS X"/>
     <property name="java.vm.specification.version" value="17"/>
-    <property name="APPLICATION_NAME" value="back-SemiSenior"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CO"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk@17/17.0.18/libexec/openjdk.jdk/Contents/Home/lib"/>
@@ -31,8 +29,6 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
-    <property name="java.awt.headless" value="true"/>
     <property name="surefire.real.class.path" value="/Users/gregorygonzalez/IdeaProjects/back-SemiSenior/target/surefire/surefirebooter-20260326071657899_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
@@ -47,13 +43,10 @@
     <property name="localRepository" value="/Users/gregorygonzalez/.m2/repository"/>
     <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
     <property name="java.io.tmpdir" value="/var/folders/8f/7nj321cn1gndyk50mc3yxfzm0000gp/T/"/>
-    <property name="com.zaxxer.hikari.pool_number" value="2"/>
     <property name="java.version" value="17.0.18"/>
     <property name="user.dir" value="/Users/gregorygonzalez/IdeaProjects/back-SemiSenior"/>
     <property name="os.arch" value="aarch64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="8877"/>
-    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
     <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/gregorygonzalez/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
@@ -63,53 +56,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="61.0"/>
-    <property name="LOGGED_APPLICATION_NAME" value="[back-SemiSenior] "/>
   </properties>
-  <testcase name="contextLoads" classname="com.e_commerce.back_SemiSenior.BackSemiSeniorApplicationTests" time="0.001">
-    <system-out><![CDATA[2026-03-26T07:17:01.136-05:00  INFO 8877 --- [back-SemiSenior] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.e_commerce.back_SemiSenior.BackSemiSeniorApplicationTests]: BackSemiSeniorApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2026-03-26T07:17:01.140-05:00  INFO 8877 --- [back-SemiSenior] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.e_commerce.back_SemiSenior.BackSemiSeniorApplication for test class com.e_commerce.back_SemiSenior.BackSemiSeniorApplicationTests
-2026-03-26T07:17:01.140-05:00  INFO 8877 --- [back-SemiSenior] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.e_commerce.back_SemiSenior.BackSemiSeniorApplicationTests]: BackSemiSeniorApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2026-03-26T07:17:01.141-05:00  INFO 8877 --- [back-SemiSenior] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.e_commerce.back_SemiSenior.BackSemiSeniorApplication for test class com.e_commerce.back_SemiSenior.BackSemiSeniorApplicationTests
-2026-03-26T07:17:01.143-05:00  INFO 8877 --- [back-SemiSenior] [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
-
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
-
- :: Spring Boot ::                (v4.0.4)
-
-2026-03-26T07:17:01.155-05:00  INFO 8877 --- [back-SemiSenior] [           main] c.e.b.BackSemiSeniorApplicationTests     : Starting BackSemiSeniorApplicationTests using Java 17.0.18 with PID 8877 (started by gregorygonzalez in /Users/gregorygonzalez/IdeaProjects/back-SemiSenior)
-2026-03-26T07:17:01.155-05:00  INFO 8877 --- [back-SemiSenior] [           main] c.e.b.BackSemiSeniorApplicationTests     : No active profile set, falling back to 1 default profile: "default"
-2026-03-26T07:17:01.240-05:00  INFO 8877 --- [back-SemiSenior] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-03-26T07:17:01.247-05:00  INFO 8877 --- [back-SemiSenior] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 3 JPA repository interfaces.
-2026-03-26T07:17:01.277-05:00  INFO 8877 --- [back-SemiSenior] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2026-03-26T07:17:01.278-05:00  INFO 8877 --- [back-SemiSenior] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:c8979ee0-9c20-4ae0-bce6-cd7766b0968b user=SA
-2026-03-26T07:17:01.279-05:00  INFO 8877 --- [back-SemiSenior] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2026-03-26T07:17:01.280-05:00  INFO 8877 --- [back-SemiSenior] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-03-26T07:17:01.288-05:00  INFO 8877 --- [back-SemiSenior] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-03-26T07:17:01.289-05:00  INFO 8877 --- [back-SemiSenior] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:h2:mem:c8979ee0-9c20-4ae0-bce6-cd7766b0968b]
-	Database driver: H2 JDBC Driver
-	Database dialect: H2Dialect
-	Database version: 2.4.240
-	Default catalog/schema: C8979EE0-9C20-4AE0-BCE6-CD7766B0968B/PUBLIC
-	Autocommit mode: undefined/unknown
-	Isolation level: READ_COMMITTED [default READ_COMMITTED]
-	JDBC fetch size: 100
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-03-26T07:17:01.307-05:00  INFO 8877 --- [back-SemiSenior] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-03-26T07:17:01.310-05:00  INFO 8877 --- [back-SemiSenior] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-03-26T07:17:01.340-05:00  WARN 8877 --- [back-SemiSenior] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-03-26T07:17:01.354-05:00  WARN 8877 --- [back-SemiSenior] [           main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
-2026-03-26T07:17:01.413-05:00  INFO 8877 --- [back-SemiSenior] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
-2026-03-26T07:17:01.467-05:00  INFO 8877 --- [back-SemiSenior] [           main] c.e.b.BackSemiSeniorApplicationTests     : Started BackSemiSeniorApplicationTests in 0.324 seconds (process running for 3.495)
-2026-03-26T07:17:01.468-05:00  WARN 8877 --- [back-SemiSenior] [           main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
-2026-03-26T07:17:01.468-05:00  WARN 8877 --- [back-SemiSenior] [           main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
-]]></system-out>
-  </testcase>
+  <testcase name="cambiarEstado_transicionNoPermitida_debeLanzarError" classname="com.e_commerce.back_SemiSenior.service.PedidoServiceImplTest" time="0.521"/>
+  <testcase name="crear_debeCalcularTotalCorrectamente" classname="com.e_commerce.back_SemiSenior.service.PedidoServiceImplTest" time="0.009"/>
+  <testcase name="cambiarEstado_transicionPermitida_debeActualizarEstado" classname="com.e_commerce.back_SemiSenior.service.PedidoServiceImplTest" time="0.003"/>
 </testsuite>
