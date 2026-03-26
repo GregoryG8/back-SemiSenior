@@ -31,3 +31,19 @@ mvn spring-boot:run
 
 ## Puerto por Defecto
 **`http://localhost:8080`** (puerto 8080)
+
+## Documentacion API (OpenAPI 3)
+
+Esta API incluye documentacion interactiva con SpringDoc.
+
+- Swagger UI: `http://localhost:8080/swagger-ui.html`
+- OpenAPI JSON: `http://localhost:8080/v3/api-docs`
+
+### Autenticacion en Swagger
+
+Si la seguridad esta habilitada, utiliza las credenciales por defecto:
+
+- Usuario: `demo`
+- Password: `demo`
+
+En Swagger UI, presiona **Authorize** y selecciona autenticacion HTTP Basic.

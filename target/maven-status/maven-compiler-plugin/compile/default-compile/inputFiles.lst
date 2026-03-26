@@ -1,4 +1,8 @@
 /Users/gregorygonzalez/IdeaProjects/back-SemiSenior/src/main/java/com/e_commerce/back_SemiSenior/BackSemiSeniorApplication.java
+/Users/gregorygonzalez/IdeaProjects/back-SemiSenior/src/main/java/com/e_commerce/back_SemiSenior/config/OpenApiConfig.java
+/Users/gregorygonzalez/IdeaProjects/back-SemiSenior/src/main/java/com/e_commerce/back_SemiSenior/config/SecurityConfig.java
+/Users/gregorygonzalez/IdeaProjects/back-SemiSenior/src/main/java/com/e_commerce/back_SemiSenior/controllers/ClienteController.java
+/Users/gregorygonzalez/IdeaProjects/back-SemiSenior/src/main/java/com/e_commerce/back_SemiSenior/controllers/PedidoController.java
 /Users/gregorygonzalez/IdeaProjects/back-SemiSenior/src/main/java/com/e_commerce/back_SemiSenior/domain/Cliente.java
 /Users/gregorygonzalez/IdeaProjects/back-SemiSenior/src/main/java/com/e_commerce/back_SemiSenior/domain/Estado.java
 /Users/gregorygonzalez/IdeaProjects/back-SemiSenior/src/main/java/com/e_commerce/back_SemiSenior/domain/LineaPedido.java
@@ -9,6 +13,8 @@
 /Users/gregorygonzalez/IdeaProjects/back-SemiSenior/src/main/java/com/e_commerce/back_SemiSenior/dto/ClienteResponseDto.java
 /Users/gregorygonzalez/IdeaProjects/back-SemiSenior/src/main/java/com/e_commerce/back_SemiSenior/dto/CrearPedidoDto.java
 /Users/gregorygonzalez/IdeaProjects/back-SemiSenior/src/main/java/com/e_commerce/back_SemiSenior/dto/LineaPedidoDto.java
+/Users/gregorygonzalez/IdeaProjects/back-SemiSenior/src/main/java/com/e_commerce/back_SemiSenior/dto/PedidoRequestDto.java
+/Users/gregorygonzalez/IdeaProjects/back-SemiSenior/src/main/java/com/e_commerce/back_SemiSenior/dto/PedidoResponseDto.java
 /Users/gregorygonzalez/IdeaProjects/back-SemiSenior/src/main/java/com/e_commerce/back_SemiSenior/dto/ProductoDto.java
 /Users/gregorygonzalez/IdeaProjects/back-SemiSenior/src/main/java/com/e_commerce/back_SemiSenior/repository/ClienteRepository.java
 /Users/gregorygonzalez/IdeaProjects/back-SemiSenior/src/main/java/com/e_commerce/back_SemiSenior/repository/LineaPedidoRepository.java
@@ -16,3 +22,4 @@
 /Users/gregorygonzalez/IdeaProjects/back-SemiSenior/src/main/java/com/e_commerce/back_SemiSenior/service/ClienteService.java
 /Users/gregorygonzalez/IdeaProjects/back-SemiSenior/src/main/java/com/e_commerce/back_SemiSenior/service/ClienteServiceImpl.java
 /Users/gregorygonzalez/IdeaProjects/back-SemiSenior/src/main/java/com/e_commerce/back_SemiSenior/service/PedidoService.java
+/Users/gregorygonzalez/IdeaProjects/back-SemiSenior/src/main/java/com/e_commerce/back_SemiSenior/service/PedidoServiceImpl.java
