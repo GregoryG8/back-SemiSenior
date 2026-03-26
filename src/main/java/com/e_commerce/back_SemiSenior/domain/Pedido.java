@@ -5,6 +5,7 @@ import jakarta.validation.constraints.PositiveOrZero;
 import lombok.Data;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,6 +26,8 @@ public class Pedido {
 
     @Enumerated(EnumType.STRING)
     private Estado estado = Estado.CREADO;
+
+    private LocalDateTime fecha = LocalDateTime.now();
 
     @PositiveOrZero
     private BigDecimal total = BigDecimal.ZERO;
