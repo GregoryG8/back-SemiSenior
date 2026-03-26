@@ -1,5 +1,6 @@
 package com.e_commerce.back_SemiSenior.repository;
 
+import com.e_commerce.back_SemiSenior.domain.Estado;
 import com.e_commerce.back_SemiSenior.domain.Pedido;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -17,7 +18,7 @@ public interface PedidoRepository extends JpaRepository<Pedido, Long> {
         "(:fechaDesde IS NULL OR p.fecha >= :fechaDesde) AND " +
         "(:fechaHasta IS NULL OR p.fecha <= :fechaHasta) AND " +
         "(:clienteId IS NULL OR p.cliente.id = :clienteId)")
-    Page<Pedido> findByFilters(String estado, LocalDateTime fechaDesde, LocalDateTime fechaHasta, Long clienteId, Pageable pageable);
+    Page<Pedido> findByFilters(Estado estado, LocalDateTime fechaDesde, LocalDateTime fechaHasta, Long clienteId, Pageable pageable);
 
     Optional<Pedido> findByReferencia(String referencia);
     boolean existsByReferencia(String referencia);

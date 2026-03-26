@@ -128,10 +128,31 @@ public class PedidoServiceImpl implements PedidoService {
                 .map(this::toResponseDto);
     }
 
+//    @Override
+//    public Page<PedidoResponseDto> buscarConFiltros(
+//            String estadoStr,
+//            LocalDateTime fechaDesde,
+//            LocalDateTime fechaHasta,
+//            Long clienteId,
+//            Pageable pageable){
+//
+//        Estado estado = null;
+//        if (estadoStr != null && !estadoStr.name().equals("")) {
+//            estado = Estado.valueOf(estadoStr.name().toUpperCase());
+//        }
+//
+//        return pedidoRepository.findByFilters(estado, fechaDesde, fechaHasta, clienteId, pageable)
+//                .map(this::toResponseDto);
+//    }
+
     @Override
-    public Page<PedidoResponseDto> obtenerTodos(Pageable pageable) {
-        // Implementar lógica para obtener todos los pedidos con paginación
-        return null;
+    public void eliminar(Long idPedido) {
+
+        Pedido pedido = pedidoRepository.findById(idPedido)
+                .orElseThrow(() -> new IllegalArgumentException("Pedido no encontrado con ID: " + idPedido));
+
+
+        clienteRepository.deleteById(idPedido);
     }
 
     @Override

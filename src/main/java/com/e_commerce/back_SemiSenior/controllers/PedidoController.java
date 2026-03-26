@@ -7,7 +7,10 @@ import com.e_commerce.back_SemiSenior.service.PedidoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.time.LocalDateTime;
 
 @RestController
 @RequestMapping("/api/pedidos")
@@ -38,6 +41,23 @@ public class PedidoController {
     @PutMapping("/{id}")
     public PedidoResponseDto actualizarPedido(@PathVariable Long id, @RequestBody PedidoRequestDto pedidoRequestDto) {
         return pedidoService.actualizar(id, pedidoRequestDto);
+    }
+
+//    @GetMapping("")
+//    public Page<PedidoResponseDto> buscarConFiltros(
+//            @RequestParam(required = false) String estado,
+//            @RequestParam(required = false) String fechaDesde,
+//            @RequestParam(required = false) String fechaHasta,
+//            @RequestParam(required = false) Long clienteId,
+//            Pageable pageable
+//    ) {
+//        return pedidoService.buscarConFiltros( fechaDesde != null ? LocalDateTime.parse(fechaDesde) : null, fechaHasta != null ? LocalDateTime.parse(fechaHasta) : null, clienteId, pageable);
+//    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> eliminarPedido(@PathVariable Long id) {
+        pedidoService.eliminar(id);
+        return ResponseEntity.noContent().build();
     }
 
 
