@@ -18,10 +18,10 @@ cd back-SemiSenior
 
 2. **Configurar base de datos** (`src/main/resources/application.properties`)
 ```properties
-spring.datasource.url=jdbc:postgresql://localhost:5432/ecommerce
-spring.datasource.username=postgres
-spring.datasource.password=--Contraseña--
-spring.jpa.hibernate.ddl-auto=update
+SUPABASE_URL="jdbc:postgresql://aws-1-us-east-1.pooler.supabase.com:5432/postgres?sslmode=require";
+SUPABASE_PASSWORD=Greekodata8@;
+SUPABASE_USERNAME=postgres.mdiqrbjvrdowsqdihuva;
+SPRING_PROFILES_ACTIVE=supabase
 ```
 
 3. **Ejecutar**
