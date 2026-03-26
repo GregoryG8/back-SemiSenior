@@ -18,9 +18,9 @@ cd back-SemiSenior
 
 2. **Configurar base de datos** (`src/main/resources/application.properties`)
 ```properties
-SUPABASE_URL="jdbc:postgresql://aws-1-us-east-1.pooler.supabase.com:5432/postgres?sslmode=require";
-SUPABASE_PASSWORD=Greekodata8@;
-SUPABASE_USERNAME=postgres.mdiqrbjvrdowsqdihuva;
+SUPABASE_URL="";
+SUPABASE_PASSWORD=;
+SUPABASE_USERNAME=p;
 SPRING_PROFILES_ACTIVE=supabase
 ```
 
