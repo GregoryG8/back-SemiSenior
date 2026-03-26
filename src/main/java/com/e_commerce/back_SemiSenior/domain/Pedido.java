@@ -34,4 +34,23 @@ public class Pedido {
 
     @OneToMany(mappedBy = "pedido", cascade = CascadeType.ALL, orphanRemoval = true,  fetch = FetchType.LAZY)
     private List<LineaPedido> lineasPedido = new ArrayList<>();
+
+    public void agregarLinea(LineaPedido linea) {
+        linea.setPedido(this);
+        linea.recalcularSubtotal();
+        this.lineasPedido.add(linea);
+        recalcularTotal();
+    }
+
+    public void limpiarYAgregarLineas(List<LineaPedido> nuevas) {
+        this.lineasPedido.clear();
+        nuevas.forEach(this::agregarLinea);
+        recalcularTotal();
+    }
+
+    public void recalcularTotal() {
+        this.total = lineasPedido.stream()
+                .map(LineaPedido::getSubtotal)
+                .reduce(BigDecimal.ZERO, BigDecimal::add);
+    }
 }

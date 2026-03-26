@@ -1,19 +1,20 @@
 package com.e_commerce.back_SemiSenior.domain;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
 import jakarta.validation.constraints.Positive;
+import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.math.BigDecimal;
 
 @Embeddable
-@Getter
-@Setter
 @Data
+@AllArgsConstructor
 public class Producto {
+
     String codigo;
+
     String nombre;
 
     @Positive

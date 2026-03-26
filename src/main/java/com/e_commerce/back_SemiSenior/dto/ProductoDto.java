@@ -1,16 +1,16 @@
 package com.e_commerce.back_SemiSenior.dto;
 
 import jakarta.validation.constraints.Positive;
-import lombok.Data;
+import lombok.Value;
 
 import java.math.BigDecimal;
 
-@Data
+@Value
 public class ProductoDto {
 
-    private  String codigo;
-    private String nombre;
+    String codigo;
+    String nombre;
 
     @Positive
-    private BigDecimal precioUnitario;
+    BigDecimal precioUnitario;
 }
